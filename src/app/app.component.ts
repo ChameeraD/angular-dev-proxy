@@ -11,10 +11,10 @@ export class AppComponent {
 
   data: any;
 
-  constructor(private corsService: DataService) {}
+  constructor(private dataService: DataService) {}
 
   ngOnInit(): void {
-    this.corsService.getData().subscribe(
+    this.dataService.getData().subscribe(
       data => {
         console.log(data);
         this.data = data;
